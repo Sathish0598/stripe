@@ -12,7 +12,7 @@ export async function checkout({lineItem}){
 
     await stripe.redirectToCheckout({
         mode:'payment',
-        lineItem,
+        lineItems,
         successUrl: `${window.location.origin}?session_id={CHECKOUT_SESSION_ID}`,
         cancelUrl: window.location.origin
     })

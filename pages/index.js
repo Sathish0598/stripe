@@ -66,7 +66,7 @@ export default function Home() {
             </h2>
             <button onClick={(()=>{
               checkout({
-                lineItem:[{
+                lineItems:[{
                   price:"price_1MM6RKE5dAr2BYacQElDMwvT",
                   quantity: 1
                 }]
